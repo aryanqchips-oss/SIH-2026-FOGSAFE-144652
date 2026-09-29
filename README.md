@@ -177,30 +177,17 @@ Sensor Data
 Detected Hazard
 Alert Status
 Communication Flow
-        ECHO / VEHICLE
-              │
-       Sensor + AI Data
-              │
-              ↓
-       V2V Communication
-          ↙         ↘
-   Nearby Vehicle   Command Center
+        ECHO / VEHICLE     ->    Sensor + AI Data  ->       V2V Communication ->  Nearby Vehicle ->  Command Center
 
 This allows one vehicle detecting a potential hazard to share relevant information with nearby connected vehicles and the Command Center.
 
 🛡️ Safety Pipeline
 Object Detection
-       ↓
 Object Association
-       ↓
-Distance + Velocity
-       ↓
+Distance + Velcity
 Risk Assessment
-       ↓
 SAFE / WARNING / CRITICAL
-       ↓
 Driver Alert
-       ↓
 V2V / Command Center
 Time-to-Collision
 TTC = D / Vrel
@@ -248,31 +235,6 @@ HTML
 CSS
 JavaScript
 
-📁 Project Structure
-ECHO/
-│
-├── ai_model/
-│   ├── Train_YOLO_Models.ipynb
-│   └── googlecolab/
-│
-├── command_centre_dashboard/
-│   └── fogsafe.html
-│
-├── truck_dashboard/
-│   ├── ai/
-│   ├── core/
-│   ├── hardware/
-│   ├── static/
-│   ├── templates/
-│   ├── app.py
-│   ├── my_model.pt
-│   └── yolo11s.pt
-│
-├── echo/
-│   ├── images/
-│   └── videos/
-│
-└── README.md
 
 🧪 Testing
 
@@ -312,25 +274,7 @@ Expanded object-detection classes
 Mine-wide connected safety network
 
 🌐 System Vision
-             ECHO
-              │
-      ┌───────┴───────┐
-      ↓               ↓
-   AI SENSING      SENSORS
-      │               │
-      └───────┬───────┘
-              ↓
-       EDGE PROCESSING
-              ↓
-        RISK AWARENESS
-              ↓
-       ┌──────┴──────┐
-       ↓             ↓
-      V2V       COMMAND CENTER
-       │             │
-       └──────┬──────┘
-              ↓
-       CONNECTED MINE
+ECHO ->AI SENSING -> SENSORS->EDGE PROCESSING->RISK AWARENESS->V2V ->COMMAND CENTER->CONNECTED MINE
        
 👥 Project
 ECHO — Intelligent Mining Safety Rover
