@@ -148,6 +148,7 @@ truck_dashboard/
 Main application:
 
 truck_dashboard/app.py
+
 🏢 Command Center
 
 The Command Center provides centralized monitoring of connected vehicles/rovers.
@@ -164,10 +165,9 @@ Fleet awareness
 Dashboard:
 
 command_centre_dashboard/fogsafe.html
+
 📶 V2V Communication
-
 ECHO supports the concept of sharing safety information between connected vehicles.
-
 A vehicle can transmit information such as:
 
 Position
@@ -247,6 +247,7 @@ Flask
 HTML
 CSS
 JavaScript
+
 📁 Project Structure
 ECHO/
 │
@@ -272,6 +273,7 @@ ECHO/
 │   └── videos/
 │
 └── README.md
+
 🧪 Testing
 
 The project includes testing of:
@@ -287,8 +289,8 @@ Edge inference
 Test media is stored under:
 
 echo/
-🎯 Project Objective
 
+🎯 Project Objective
 The objective of ECHO is to build an intelligent mining-safety platform that can:
 
 Sense the surrounding environment
@@ -298,6 +300,7 @@ Assess potential hazards
 Alert the vehicle operator
 Communicate safety information to nearby vehicles
 Monitor connected vehicles through a Command Center
+
 🔮 Future Scope
 Improved multi-sensor fusion
 Advanced collision prediction
@@ -307,6 +310,7 @@ Autonomous navigation
 More optimized edge AI inference
 Expanded object-detection classes
 Mine-wide connected safety network
+
 🌐 System Vision
              ECHO
               │
@@ -327,6 +331,7 @@ Mine-wide connected safety network
        └──────┬──────┘
               ↓
        CONNECTED MINE
+       
 👥 Project
 ECHO — Intelligent Mining Safety Rover
 
